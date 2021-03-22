@@ -26,3 +26,16 @@ class UnauthorisedException extends CustomException {
 class InvalidInputException extends CustomException {
   InvalidInputException(String message) : super(message, "Invalid Input:");
 }
+
+class ForbiddenClienException extends CustomException {
+  ForbiddenClienException(String message) : super(message, "Forbidden Client:");
+}
+
+class InternalServerErrorException extends CustomException {
+  InternalServerErrorException(String message)
+      : super(message, "Internal Server Error:");
+}
+
+class UnknownException extends CustomException {
+  UnknownException(String message) : super(message, "Unknown Exception: ");
+}
